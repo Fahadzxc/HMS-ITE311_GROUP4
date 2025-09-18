@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Requests - San Miguel HMS</title>
+<<<<<<< HEAD
+=======
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
@@ -12,13 +16,18 @@
         }
         
         .sidebar {
+<<<<<<< HEAD
             background-color: #243849;
+=======
+            background-color: #2c3e50;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             min-height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             z-index: 1000;
+<<<<<<< HEAD
             display: flex;
             flex-direction: column;
         }
@@ -73,15 +82,33 @@
         }
         
         .nav-link:hover {
+=======
+        }
+        
+        .sidebar .nav-link {
+            color: #ecf0f1;
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin: 2px 10px;
+            transition: all 0.3s;
+        }
+        
+        .sidebar .nav-link:hover {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             background-color: #34495e;
             color: #fff;
         }
         
+<<<<<<< HEAD
         .nav-link.active {
+=======
+        .sidebar .nav-link.active {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             background-color: #3498db;
             color: #fff;
         }
         
+<<<<<<< HEAD
         .nav-link i {
             margin-right: 10px;
             width: 20px;
@@ -93,6 +120,8 @@
             border-top: 1px solid #34495e;
         }
         
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .main-content {
             margin-left: 250px;
             padding: 20px;
@@ -100,6 +129,7 @@
         
         .header {
             background: #fff;
+<<<<<<< HEAD
             padding: 20px 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -130,6 +160,12 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
+=======
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         }
         
         .summary-card {
@@ -137,12 +173,17 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+<<<<<<< HEAD
             text-align: center;
             transition: transform 0.3s ease;
         }
         
         .summary-card:hover {
             transform: translateY(-5px);
+=======
+            margin-bottom: 20px;
+            text-align: center;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         }
 
         .summary-card.progress-card {
@@ -166,6 +207,7 @@
 
 
         
+<<<<<<< HEAD
         .summary-card i {
             font-size: 2.5rem;
             margin-bottom: 15px;
@@ -179,6 +221,8 @@
             letter-spacing: 0.5px;
         }
         
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .summary-card .number {
             font-size: 2.5rem;
             font-weight: bold;
@@ -190,6 +234,7 @@
         .summary-card.progress .number { color: #ffc107; }
         .summary-card.urgent .number { color: #dc3545; }
         
+<<<<<<< HEAD
         /* Text color utilities */
         .text-muted { color: #6c757d !important; }
         .text-primary { color: #007bff !important; }
@@ -197,6 +242,8 @@
         .text-danger { color: #dc3545 !important; }
         .text-success { color: #28a745 !important; }
         
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .table-container {
             background: #fff;
             border-radius: 10px;
@@ -205,13 +252,18 @@
         }
         
         .table {
+<<<<<<< HEAD
             width: 100%;
             border-collapse: collapse;
             margin: 0;
+=======
+            margin-bottom: 0;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         }
         
         .table th {
             background-color: #f8f9fa;
+<<<<<<< HEAD
             padding: 15px 12px;
             text-align: left;
             font-weight: 600;
@@ -226,6 +278,11 @@
             padding: 15px 12px;
             border-bottom: 1px solid #dee2e6;
             vertical-align: middle;
+=======
+            border-bottom: 2px solid #dee2e6;
+            font-weight: 600;
+            color: #495057;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         }
         
         .table tbody tr:nth-child(even) {
@@ -236,6 +293,7 @@
             background-color: #e9ecef;
         }
         
+<<<<<<< HEAD
         .btn {
             display: inline-block;
             padding: 12px 25px;
@@ -254,10 +312,24 @@
         }
         
         .btn-primary:hover {
+=======
+        .btn-new-request {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-new-request:hover {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0,123,255,0.3);
         }
         
+<<<<<<< HEAD
         .btn-outline-secondary {
             background: transparent;
             color: #6c757d;
@@ -269,6 +341,8 @@
             color: white;
         }
         
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .modal-overlay {
             display: none;
             position: fixed;
@@ -361,6 +435,7 @@
         }
         
         .badge {
+<<<<<<< HEAD
             display: inline-block;
             padding: 4px 12px;
             border-radius: 20px;
@@ -373,10 +448,22 @@
         .badge-urgent { background-color: #fff3e0; color: #f57c00; }
         .badge-normal { background-color: #e3f2fd; color: #1976d2; }
         .badge-routine { background-color: #e8f5e8; color: #2e7d32; }
+=======
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .badge-routine { background-color: #e3f2fd; color: #1976d2; }
+        .badge-urgent { background-color: #fff3e0; color: #f57c00; }
+        .badge-stat { background-color: #ffebee; color: #d32f2f; }
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .badge-new-request { background-color: #e8f5e8; color: #2e7d32; }
         .badge-in-progress { background-color: #e3f2fd; color: #1976d2; }
         .badge-completed { background-color: #e8f5e8; color: #2e7d32; }
 
+<<<<<<< HEAD
         .action-links {
             display: flex;
             gap: 15px;
@@ -394,6 +481,15 @@
             color: #0056b3;
         }
         
+=======
+        .action-link {
+            text-decoration: underline;
+            font-size: 14px;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .process-link { color: #10b981; }
         .view-link { color: #3b82f6; }
         .edit-link { color: #374151; }
@@ -468,6 +564,7 @@
             border-radius: 6px;
             cursor: pointer;
         }
+<<<<<<< HEAD
         
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -582,6 +679,70 @@
         <div class="sidebar-footer">
             <a href="<?= site_url('auth/logout') ?>" class="nav-link">
                 <i class="fas fa-sign-out-alt"></i> Logout
+=======
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="text-center mb-4 pt-3">
+            <i class="fas fa-hospital fa-2x text-white mb-2"></i>
+            <h4 class="text-white">Laboratory</h4>
+            <small class="text-muted">San Miguel Hospital</small>
+        </div>
+        
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory') ?>">
+                    <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="<?= site_url('laboratory/test/request') ?>">
+                    <i class="fas fa-clipboard-list me-2"></i> Test Requests
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/test/results') ?>">
+                    <i class="fas fa-file-medical-alt me-2"></i> Test Results
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/equipment/status') ?>">
+                    <i class="fas fa-tools me-2"></i> Equipment
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/tracking') ?>">
+                    <i class="fas fa-search me-2"></i> Sample Tracking
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/reports') ?>">
+                    <i class="fas fa-chart-bar me-2"></i> Lab Reports
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/quality') ?>">
+                    <i class="fas fa-shield-alt me-2"></i> Quality Control
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/inventory') ?>">
+                    <i class="fas fa-flask me-2"></i> Lab Inventory
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/settings') ?>">
+                    <i class="fas fa-cog me-2"></i> Settings
+                </a>
+            </li>
+        </ul>
+        
+        <div class="mt-auto pt-3">
+            <a href="<?= site_url('auth/logout') ?>" class="nav-link">
+                <i class="fas fa-sign-out-alt me-2"></i> Logout
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </a>
         </div>
     </div>
@@ -590,6 +751,7 @@
     <div class="main-content">
         <!-- Header -->
         <div class="header">
+<<<<<<< HEAD
             <div class="header-content">
                 <h2>Test Requests</h2>
                 <p class="text-muted">Manage laboratory test requests from doctors and nurses</p>
@@ -601,10 +763,26 @@
                 <button class="btn btn-primary" onclick="openModal()">
                     <i class="fas fa-plus"></i> New Request
                 </button>
+=======
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="mb-1">Test Requests</h2>
+                    <p class="text-muted mb-0">Manage laboratory test requests from doctors and nurses</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-secondary me-2">
+                        <i class="fas fa-filter me-2"></i> Filters
+                    </button>
+                    <button class="btn btn-new-request" onclick="openModal()">
+                        <i class="fas fa-plus me-2"></i> New Request
+                    </button>
+                </div>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </div>
         </div>
 
         <!-- Summary Cards -->
+<<<<<<< HEAD
         <div class="summary-cards">
             <div class="summary-card total">
                 <i class="fas fa-clipboard-list text-muted"></i>
@@ -625,6 +803,36 @@
                 <i class="fas fa-exclamation-triangle text-danger"></i>
                 <h6 class="text-muted">Urgent/High Priority</h6>
                 <div class="number">0</div>
+=======
+        <div class="row">
+            <div class="col-md-3">
+                <div class="summary-card total">
+                    <i class="fas fa-clipboard-list fa-2x text-muted mb-2"></i>
+                    <h6 class="text-muted">Total Requests</h6>
+                    <div class="number">0</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card new">
+                    <i class="fas fa-plus-circle fa-2x text-primary mb-2"></i>
+                    <h6 class="text-muted">New Requests</h6>
+                    <div class="number">0</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card progress progress-card">
+                    <i class="fas fa-play-circle fa-2x text-warning mb-2"></i>
+                    <h6 class="text-muted">In Progress</h6>
+                    <div class="number">0</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card urgent">
+                    <i class="fas fa-exclamation-triangle fa-2x text-danger mb-2"></i>
+                    <h6 class="text-muted">Urgent/High Priority</h6>
+                    <div class="number">0</div>
+                </div>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </div>
         </div>
 
@@ -673,11 +881,17 @@
                                 </td>
                                 <td><?= esc($request['expected_date']) ?></td>
                                 <td>
+<<<<<<< HEAD
                                     <div class="action-links">
                                         <a href="#" class="action-link process-link" onclick="openProcessModal('<?= $request['lab_id'] ?>', '<?= esc($request['patient_name']) ?>', '<?= esc($request['tests']) ?>', '<?= esc($request['priority']) ?>')">Process</a>
                                         <a href="#" class="action-link view-link" onclick="openViewModal('<?= $request['lab_id'] ?>', '<?= esc($request['patient_name']) ?>', '<?= esc($request['tests']) ?>', '<?= esc($request['priority']) ?>', '<?= esc($request['doctor_name']) ?>', '<?= esc($request['expected_date']) ?>')">View</a>
                                         <a href="#" class="action-link edit-link" onclick="openEditModal('<?= $request['lab_id'] ?>', '<?= esc($request['patient_name']) ?>', '<?= esc($request['tests']) ?>', '<?= esc($request['priority']) ?>', '<?= esc($request['expected_date']) ?>')">Edit</a>
                                     </div>
+=======
+                                    <a href="#" class="action-link process-link" onclick="openProcessModal('<?= $request['lab_id'] ?>', '<?= esc($request['patient_name']) ?>', '<?= esc($request['tests']) ?>', '<?= esc($request['priority']) ?>')">Process</a>
+                                    <a href="#" class="action-link view-link" onclick="openViewModal('<?= $request['lab_id'] ?>', '<?= esc($request['patient_name']) ?>', '<?= esc($request['tests']) ?>', '<?= esc($request['priority']) ?>', '<?= esc($request['doctor_name']) ?>', '<?= esc($request['expected_date']) ?>')">View</a>
+                                    <a href="#" class="action-link edit-link" onclick="openEditModal('<?= $request['lab_id'] ?>', '<?= esc($request['patient_name']) ?>', '<?= esc($request['tests']) ?>', '<?= esc($request['priority']) ?>', '<?= esc($request['expected_date']) ?>')">Edit</a>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -995,6 +1209,7 @@
     </div>
 
     <script>
+<<<<<<< HEAD
         // Sidebar toggle for mobile
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -1013,6 +1228,8 @@
             }
         });
 
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         function openModal() {
             document.getElementById('requestModal').style.display = 'block';
         }

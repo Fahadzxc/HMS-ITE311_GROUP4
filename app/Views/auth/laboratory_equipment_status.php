@@ -12,13 +12,18 @@
         }
         
         .sidebar {
+<<<<<<< HEAD
             background-color: #243849;
+=======
+            background-color: #2c3e50;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             min-height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             z-index: 1000;
+<<<<<<< HEAD
             display: flex;
             flex-direction: column;
         }
@@ -73,15 +78,33 @@
         }
         
         .nav-link:hover {
+=======
+        }
+        
+        .sidebar .nav-link {
+            color: #ecf0f1;
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin: 2px 10px;
+            transition: all 0.3s;
+        }
+        
+        .sidebar .nav-link:hover {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             background-color: #34495e;
             color: #fff;
         }
         
+<<<<<<< HEAD
         .nav-link.active {
+=======
+        .sidebar .nav-link.active {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             background-color: #3498db;
             color: #fff;
         }
         
+<<<<<<< HEAD
         .nav-link i {
             margin-right: 10px;
             width: 20px;
@@ -93,6 +116,8 @@
             border-top: 1px solid #34495e;
         }
         
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .main-content {
             margin-left: 250px;
             padding: 20px;
@@ -100,6 +125,7 @@
         
         .header {
             background: #fff;
+<<<<<<< HEAD
             padding: 20px 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -130,6 +156,12 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
+=======
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         }
         
         .summary-card {
@@ -645,6 +677,15 @@
         .pt-3 { padding-top: 1rem !important; }
         .me-2 { margin-right: 0.5rem !important; }
         .mt-auto { margin-top: auto !important; }
+<<<<<<< HEAD
+=======
+        .nav { display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; }
+        .nav.flex-column { flex-direction: column !important; }
+        .nav-item { margin-bottom: 0; }
+        .nav-link { display: block; padding: 0.5rem 1rem; color: #0d6efd; text-decoration: none; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+        .nav-link:hover { color: #0a58ca; }
+        .nav-link.active { color: #fff; background-color: #0d6efd; }
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .d-flex { display: flex !important; }
         .justify-content-between { justify-content: space-between !important; }
         .align-items-center { align-items: center !important; }
@@ -927,6 +968,7 @@
         .rounded-end { border-top-right-radius: 0.375rem !important; border-bottom-right-radius: 0.375rem !important; }
         .rounded-bottom { border-bottom-right-radius: 0.375rem !important; border-bottom-left-radius: 0.375rem !important; }
         .rounded-start { border-bottom-left-radius: 0.375rem !important; border-top-left-radius: 0.375rem !important; }
+<<<<<<< HEAD
         
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -1041,6 +1083,60 @@
         <div class="sidebar-footer">
             <a href="<?= site_url('auth/logout') ?>" class="nav-link">
                 <i class="fas fa-sign-out-alt"></i> Logout
+=======
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="text-center mb-4 pt-3">
+            <i class="fas fa-hospital fa-2x text-white mb-2"></i>
+            <h4 class="text-white">Laboratory</h4>
+            <small class="text-muted">San Miguel Hospital</small>
+        </div>
+        
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory') ?>">
+                    <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/test/request') ?>">
+                    <i class="fas fa-clipboard-list me-2"></i> Test Requests
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/test/results') ?>">
+                    <i class="fas fa-file-medical-alt me-2"></i> Test Results
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="<?= site_url('laboratory/equipment/status') ?>">
+                    <i class="fas fa-tools me-2"></i> Equipment
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/reports') ?>">
+                    <i class="fas fa-chart-bar me-2"></i> Lab Reports
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/inventory') ?>">
+                    <i class="fas fa-flask me-2"></i> Lab Inventory
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/settings') ?>">
+                    <i class="fas fa-cog me-2"></i> Settings
+                </a>
+            </li>
+        </ul>
+        
+        <div class="mt-auto pt-3">
+            <a href="<?= site_url('auth/logout') ?>" class="nav-link">
+                <i class="fas fa-sign-out-alt me-2"></i> Logout
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </a>
         </div>
     </div>
@@ -1049,6 +1145,7 @@
     <div class="main-content">
         <!-- Header -->
         <div class="header">
+<<<<<<< HEAD
             <div class="header-content">
                 <h2>Equipment Status</h2>
                 <p class="text-muted">Monitor and manage laboratory equipment status</p>
@@ -1060,10 +1157,26 @@
                 <button class="btn btn-primary" onclick="openAddModal()">
                     <i class="fas fa-plus"></i> Add Equipment
                 </button>
+=======
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="mb-1">Equipment Status</h2>
+                    <p class="text-muted mb-0">Monitor and manage laboratory equipment status</p>
+                </div>
+                <div>
+                    <button class="btn btn-schedule me-2">
+                        <i class="fas fa-wrench me-2"></i> Schedule Maintenance
+                    </button>
+                    <button class="btn btn-add">
+                        <i class="fas fa-plus me-2"></i> + Add Equipment
+                    </button>
+                </div>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </div>
         </div>
 
         <!-- Summary Cards -->
+<<<<<<< HEAD
         <div class="summary-cards">
             <div class="summary-card total">
                 <i class="fas fa-tools text-primary"></i>
@@ -1084,6 +1197,36 @@
                 <i class="fas fa-times-circle text-danger"></i>
                 <h6 class="text-muted">Out of Service</h6>
                 <div class="number">2</div>
+=======
+        <div class="row">
+            <div class="col-md-3">
+                <div class="summary-card total">
+                    <i class="fas fa-tools fa-2x text-primary mb-2"></i>
+                    <h6 class="text-muted">Total Equipment</h6>
+                    <div class="number">24</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card operational">
+                    <i class="fas fa-check-circle fa-2x text-success mb-2"></i>
+                    <h6 class="text-muted">Operational</h6>
+                    <div class="number">18</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card maintenance">
+                    <i class="fas fa-wrench fa-2x text-warning mb-2"></i>
+                    <h6 class="text-muted">Needs Maintenance</h6>
+                    <div class="number">4</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card out-of-service">
+                    <i class="fas fa-times-circle fa-2x text-danger mb-2"></i>
+                    <h6 class="text-muted">Out of Service</h6>
+                    <div class="number">2</div>
+                </div>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </div>
         </div>
 
@@ -1527,6 +1670,7 @@
     </div>
 
     <script>
+<<<<<<< HEAD
         // Sidebar toggle for mobile
         function toggleSidebar() {
             const sidebar = document.querySelector('.sidebar');
@@ -1574,10 +1718,50 @@
         document.getElementById('addModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeAddModal();
+=======
+        // Equipment status functions
+        document.querySelector('.btn-schedule').addEventListener('click', function() {
+            openScheduleMaintenanceModal();
+        });
+
+        document.querySelector('.btn-add').addEventListener('click', function() {
+            openAddEquipmentModal();
+        });
+
+        // Schedule Maintenance Modal functions
+        function openScheduleMaintenanceModal() {
+            document.getElementById('scheduleMaintenanceModal').style.display = 'flex';
+        }
+
+        function closeScheduleMaintenanceModal() {
+            document.getElementById('scheduleMaintenanceModal').style.display = 'none';
+        }
+
+        // Add Equipment Modal functions
+        function openAddEquipmentModal() {
+            document.getElementById('addEquipmentModal').style.display = 'flex';
+        }
+
+        function closeAddEquipmentModal() {
+            document.getElementById('addEquipmentModal').style.display = 'none';
+        }
+
+        // Close modals when clicking outside
+        document.getElementById('scheduleMaintenanceModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeScheduleMaintenanceModal();
+            }
+        });
+
+        document.getElementById('addEquipmentModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAddEquipmentModal();
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             }
         });
 
         // Form submissions
+<<<<<<< HEAD
         document.getElementById('scheduleForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -1610,6 +1794,58 @@
             console.log('Add Equipment Data:', formData);
             alert('Equipment added successfully!');
             closeAddModal();
+=======
+        document.getElementById('scheduleMaintenanceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const equipment = formData.get('equipment');
+            const maintenanceType = formData.get('maintenanceType');
+            const priority = formData.get('priority');
+            const scheduledDate = formData.get('scheduledDate');
+            const assignedTechnician = formData.get('assignedTechnician');
+            const description = formData.get('description');
+            
+            console.log('Schedule Maintenance Data:', {
+                equipment,
+                maintenanceType,
+                priority,
+                scheduledDate,
+                assignedTechnician,
+                description
+            });
+            
+            alert('Maintenance scheduled successfully!');
+            closeScheduleMaintenanceModal();
+        });
+
+        document.getElementById('addEquipmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const equipmentName = formData.get('equipmentName');
+            const model = formData.get('model');
+            const serialNumber = formData.get('serialNumber');
+            const location = formData.get('location');
+            const assignedTechnician = formData.get('assignedTechnician');
+            const purchaseDate = formData.get('purchaseDate');
+            const warrantyEndDate = formData.get('warrantyEndDate');
+            const maintenanceInterval = formData.get('maintenanceInterval');
+            
+            console.log('Add Equipment Data:', {
+                equipmentName,
+                model,
+                serialNumber,
+                location,
+                assignedTechnician,
+                purchaseDate,
+                warrantyEndDate,
+                maintenanceInterval
+            });
+            
+            alert('Equipment added successfully!');
+            closeAddEquipmentModal();
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         });
 
         // Equipment Details Modal functions

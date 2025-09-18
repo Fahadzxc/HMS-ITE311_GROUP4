@@ -12,13 +12,18 @@
         }
         
         .sidebar {
+<<<<<<< HEAD
             background-color: #243849;
+=======
+            background-color: #2c3e50;
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             min-height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             z-index: 1000;
+<<<<<<< HEAD
             display: flex;
             flex-direction: column;
         }
@@ -73,15 +78,33 @@
         }
         
         .nav-link:hover {
+=======
+        }
+        
+        .sidebar .nav-link {
+            color: #ecf0f1;
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin: 2px 10px;
+            transition: all 0.3s;
+        }
+        
+        .sidebar .nav-link:hover {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             background-color: #34495e;
             color: #fff;
         }
         
+<<<<<<< HEAD
         .nav-link.active {
+=======
+        .sidebar .nav-link.active {
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             background-color: #3498db;
             color: #fff;
         }
         
+<<<<<<< HEAD
         .nav-link i {
             margin-right: 10px;
             width: 20px;
@@ -262,6 +285,8 @@
         }
         
         
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .main-content {
             margin-left: 250px;
             padding: 20px;
@@ -346,6 +371,7 @@
             box-shadow: 0 4px 15px rgba(0,123,255,0.3);
         }
         
+<<<<<<< HEAD
         .action-links {
             display: flex;
             gap: 15px;
@@ -363,6 +389,15 @@
             color: #0056b3;
         }
         
+=======
+        .action-link {
+            text-decoration: underline;
+            font-size: 14px;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .view-link { color: #3b82f6; }
         .print-link { color: #3b82f6; }
         .send-link { color: #3b82f6; }
@@ -752,6 +787,7 @@
         .btn-send:hover {
             background: #0056b3;
         }
+<<<<<<< HEAD
         
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -807,6 +843,8 @@
                 display: block;
             }
         }
+=======
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
 
         /* Print Styles */
         @media print {
@@ -827,6 +865,24 @@
             }
         }
         
+<<<<<<< HEAD
+=======
+        /* Bootstrap Replacement CSS */
+        .text-center { text-align: center; }
+        .text-white { color: #fff !important; }
+        .text-muted { color: #6c757d !important; }
+        .mb-4 { margin-bottom: 1.5rem !important; }
+        .mb-2 { margin-bottom: 0.5rem !important; }
+        .pt-3 { padding-top: 1rem !important; }
+        .me-2 { margin-right: 0.5rem !important; }
+        .mt-auto { margin-top: auto !important; }
+        .nav { display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; }
+        .nav.flex-column { flex-direction: column !important; }
+        .nav-item { margin-bottom: 0; }
+        .nav-link { display: block; padding: 0.5rem 1rem; color: #0d6efd; text-decoration: none; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+        .nav-link:hover { color: #0a58ca; }
+        .nav-link.active { color: #fff; background-color: #0d6efd; }
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         .d-flex { display: flex !important; }
         .justify-content-between { justify-content: space-between !important; }
         .align-items-center { align-items: center !important; }
@@ -1112,6 +1168,7 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <!-- Hamburger Menu (Mobile) -->
     <button class="hamburger" onclick="toggleSidebar()">
         <i class="fas fa-bars"></i>
@@ -1168,6 +1225,57 @@
         <div class="sidebar-footer">
             <a href="<?= site_url('auth/logout') ?>" class="nav-link">
                 <i class="fas fa-sign-out-alt"></i> Logout
+=======
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="text-center mb-4 pt-3">
+            <i class="fas fa-hospital fa-2x text-white mb-2"></i>
+            <h4 class="text-white">Laboratory</h4>
+            <small class="text-muted">San Miguel Hospital</small>
+        </div>
+        
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory') ?>">
+                    <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/test/request') ?>">
+                    <i class="fas fa-clipboard-list me-2"></i> Test Requests
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="<?= site_url('laboratory/test/results') ?>">
+                    <i class="fas fa-file-medical-alt me-2"></i> Test Results
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/equipment/status') ?>">
+                    <i class="fas fa-tools me-2"></i> Equipment
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/reports') ?>">
+                    <i class="fas fa-chart-bar me-2"></i> Lab Reports
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/inventory') ?>">
+                    <i class="fas fa-flask me-2"></i> Lab Inventory
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url('laboratory/settings') ?>">
+                    <i class="fas fa-cog me-2"></i> Settings
+                </a>
+            </li>
+        </ul>
+        
+        <div class="mt-auto pt-3">
+            <a href="<?= site_url('auth/logout') ?>" class="nav-link">
+                <i class="fas fa-sign-out-alt me-2"></i> Logout
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </a>
         </div>
     </div>
@@ -1176,6 +1284,7 @@
     <div class="main-content">
         <!-- Header -->
         <div class="header">
+<<<<<<< HEAD
             <div class="header-content">
                 <h2>Test Results</h2>
                 <p class="text-muted">View and manage laboratory test results</p>
@@ -1187,10 +1296,26 @@
                 <button class="btn btn-primary" onclick="openEnterResultsModal()">
                     <i class="fas fa-plus"></i> Enter Results
                 </button>
+=======
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="mb-1">Test Results</h2>
+                    <p class="text-muted mb-0">View and manage laboratory test results</p>
+                </div>
+                <div>
+                    <button class="btn btn-export me-2">
+                        <i class="fas fa-download me-2"></i> Export
+                    </button>
+                    <button class="btn btn-enter-results">
+                        <i class="fas fa-plus me-2"></i> + Enter Results
+                    </button>
+                </div>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </div>
         </div>
 
         <!-- Summary Cards -->
+<<<<<<< HEAD
         <div class="summary-cards">
             <div class="summary-card total">
                 <i class="fas fa-file-alt text-primary"></i>
@@ -1211,6 +1336,36 @@
                 <i class="fas fa-calendar-day text-success"></i>
                 <h6 class="text-muted">Today's Results</h6>
                 <div class="number">23</div>
+=======
+        <div class="row">
+            <div class="col-md-3">
+                <div class="summary-card total">
+                    <i class="fas fa-file-alt fa-2x text-primary mb-2"></i>
+                    <h6 class="text-muted">Total Results</h6>
+                    <div class="number">89</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card pending">
+                    <i class="fas fa-eye fa-2x text-primary mb-2"></i>
+                    <h6 class="text-muted">Pending Review</h6>
+                    <div class="number">12</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card critical">
+                    <i class="fas fa-exclamation-triangle fa-2x text-danger mb-2"></i>
+                    <h6 class="text-muted">Critical Results</h6>
+                    <div class="number">5</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="summary-card today">
+                    <i class="fas fa-calendar-day fa-2x text-success mb-2"></i>
+                    <h6 class="text-muted">Today's Results</h6>
+                    <div class="number">23</div>
+                </div>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
             </div>
         </div>
 
@@ -1239,11 +1394,17 @@
                         <td>2024-01-16</td>
                         <td><span class="flags-critical">▲ Critical</span></td>
                         <td>
+<<<<<<< HEAD
                             <div class="action-links">
                                 <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
                                 <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
                                 <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
                             </div>
+=======
+                            <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
+                            <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
+                            <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
                         </td>
                     </tr>
                     <tr>
@@ -1255,11 +1416,17 @@
                         <td>2024-01-16</td>
                         <td></td>
                         <td>
+<<<<<<< HEAD
                             <div class="action-links">
                                 <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
                                 <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
                                 <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
                             </div>
+=======
+                            <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
+                            <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
+                            <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
                         </td>
                     </tr>
                     <tr>
@@ -1271,11 +1438,17 @@
                         <td>2024-01-16</td>
                         <td></td>
                         <td>
+<<<<<<< HEAD
                             <div class="action-links">
                                 <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
                                 <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
                                 <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
                             </div>
+=======
+                            <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
+                            <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
+                            <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
                         </td>
                     </tr>
                     <tr>
@@ -1287,11 +1460,17 @@
                         <td>2024-01-16</td>
                         <td></td>
                         <td>
+<<<<<<< HEAD
                             <div class="action-links">
                                 <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
                                 <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
                                 <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
                             </div>
+=======
+                            <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
+                            <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
+                            <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
                         </td>
                     </tr>
                     <tr>
@@ -1303,11 +1482,17 @@
                         <td>2024-01-16</td>
                         <td><span class="flags-critical">▲ Critical</span></td>
                         <td>
+<<<<<<< HEAD
                             <div class="action-links">
                                 <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
                                 <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
                                 <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
                             </div>
+=======
+                            <a href="#" class="action-link view-link" onclick="openViewDetailsModal('LAB-001', 'Maria Santos', 'P-12345', 'Complete Blood Count', '2024-01-16', 'John Martinez')">View</a>
+                            <a href="#" class="action-link print-link" onclick="printResult('LAB-001')">Print</a>
+                            <a href="#" class="action-link send-link" onclick="sendResult('LAB-001')">Send</a>
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
                         </td>
                     </tr>
                 </tbody>
@@ -1494,6 +1679,7 @@
     </div>
 
     <script>
+<<<<<<< HEAD
         // Sidebar toggle for mobile
         function toggleSidebar() {
             const sidebar = document.querySelector('.sidebar');
@@ -1515,6 +1701,15 @@
         // Add any JavaScript functionality here
         document.querySelector('.btn-secondary').addEventListener('click', function() {
             alert('Export functionality would be implemented here');
+=======
+        // Add any JavaScript functionality here
+        document.querySelector('.btn-export').addEventListener('click', function() {
+            alert('Export functionality would be implemented here');
+        });
+
+        document.querySelector('.btn-enter-results').addEventListener('click', function() {
+            openEnterResultsModal();
+>>>>>>> f3d3eeec5c02ffbabcac50fc1e3b51daa55227fd
         });
 
         // Modal functions
